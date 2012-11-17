@@ -1,0 +1,10 @@
+<li>
+	<span>Pos.</span>
+	<span>Nome</span>
+	<!--<span>Capo</span>-->
+	<span>Membri</span>	
+	<span>V</span>
+	<span>P</span>
+	<span>S</span>
+	<!--<span>Regno</span>-->
+</li>

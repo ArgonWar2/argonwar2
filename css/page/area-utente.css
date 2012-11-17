@@ -1,0 +1,46 @@
+#reserved_area {
+	width:500px;
+	margin:0 auto;
+}
+#reserved_area ul {
+	list-style:none;
+	display:table;
+	/* border-left: 1px solid white; */
+	width:100%;
+	table-layout:fixed; /* fixes overlapped words */
+}
+#reserved_area ul li {
+	display:table-row;
+	width:100%;
+}
+
+#reserved_area ul li span,
+#reserved_area ul li label {
+	display:table-cell;
+	padding: 5px 0;
+	border-bottom: 1px dashed #666;
+	width:50%;
+	vertical-align:middle;
+	word-wrap:break-word;
+}
+#reserved_area li span:nth-child(3) { /* placeholder */
+	display:none;
+	width:100%;
+}
+#reserved_area ul > li:last-child span,
+#reserved_area ul > li:last-child label { /* unordered attributes' list - last cells */
+	border:none;
+}
+#reserved_area ul > li > span:nth-child(1),
+#reserved_area ul > li > label {} /* first cells */
+
+.change,
+.cancel {
+	cursor:default;
+}
+.change:hover,
+.cancel:hover {
+	text-decoration:none;
+}
+
+/* #reserved_area form { width:100% } doesn't work */

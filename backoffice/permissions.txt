@@ -1,0 +1,5 @@
+0 SERVER_ADMIN        Visualizza e modifica i log
+1 SUPER_GAME_MASTER   Crea item
+2 GAME_MASTER         Visualizza la lista degli account (quindi può bannare)
+3 CHIEF_REPORTER      Visualizza la lista degli articoli (quindi può pubblicare e modificare)
+4 REPORTER            Scrive articoli

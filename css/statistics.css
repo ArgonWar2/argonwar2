@@ -1,0 +1,29 @@
+ol.top10 {
+	list-style-type:decimal;
+	list-style-position:inside;
+}
+ol.top10 li:hover {
+	background:rgba(255,255,255,.1);
+}
+
+ul#statistics li, ol.top10 li {
+	margin: 3px 0;
+	padding-top:3px;
+	padding-bottom:2px;
+}
+ul#statistics li:hover {padding-left:5px}
+ol.top10 li a:hover {text-decoration:none}
+
+
+ul#statistics li span:nth-child(1),
+ol.top10 li span:nth-child(1) {/*background-color:#aaf*/}
+ 
+ul#statistics li span:nth-child(2),
+ol.top10 li span:nth-child(2) {
+	float:right;
+	padding-right:5px;
+	/*background-color:#faa;*/
+}
+ul#statistics li:after,
+ol.top10:after { display:block; content:''; clear:right; }
+

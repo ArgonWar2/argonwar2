@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Top Secret';
+    src: url('../font/topsecret.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+body {
+	color:#ccc;
+	font-family:Arial;
+	background-color:black;
+	text-shadow:0 0 1px black;
+	margin:0; padding:0;
+	height:100%;
+}
+a {
+	text-decoration:none;
+}
+
+a:visited {
+	color:#0c0;
+}
+a:link {
+	color:#0d0;
+}
+a:hover {
+	color:#0F0;
+	text-shadow:0 0 3px #0f0;
+}
+a:active {
+	text-shadow:0 0 3px #00f;
+}
+h1,h2,h3,h4,h5,h6{
+	color:white;
+}
+h1 {
+}
+.topsecret{
+	font-family: 'Top Secret';
+	color:#888;
+}
+h2.quote {
+	margin-bottom:0;
+}
+h3.quote {
+	margin-top:5px;
+	font-style:italic;
+	color:#ccc;
+}
+
+form{
+}
+
+fieldset {
+	display:table;
+	border-radius:12px;
+	border-spacing:0 5px; /* this property can be applied only to tables. 1st param sets horizontal spacing, 2nd vertical. */
+}
+
+fieldset > p {
+	display:table-row;
+	width:100%;
+}
+
+label, input {
+	display:table-cell;
+}
+label { width:50%}
+
+
+form button[name=login] {
+	float:right;	
+}
+input, button, textarea {
+	margin-bottom:10px;
+	background-color:#222;	
+	color:white;
+}
+button {
+	padding:3px 0;
+	width:100px;
+	box-shadow: 0 -10px 6px #444444 inset;
+	display:block;
+	margin:0 auto;
+	color:white;
+}
+input {
+	border-radius: 6px;
+	box-shadow: 0 8px 5px #444444 inset;
+	color: white;
+	width:100%;
+	font-weight:bold;
+}
+select {
+	background-color:black;
+	color:white;
+}
+
+table tr:nth-child(even) {
+	background-color: rgba(136,136,136,.2);
+}
+
+/* IDs */
+
+#wrapper {
+    position:absolute;
+    top:0;
+    left:0;
+	min-width:100%;
+	height:100%;
+	background-image:url('../img/bg-alpha20.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;	
+	background-position:top right;
+}
+
+#container {
+	position:relative;
+	min-width:800px;
+	height:100%;
+	margin-left: 20px;
+	overflow-x:hidden;
+/*
+	opacity:0;
+}
+#container:hover {
+	opacity:1;
+*/
+}
+
+form[name=login] {
+	width:300px;
+}
+
+#continue {display:none}
+
+/* Classes */
+.error:before { color:red; font-weight:bold; content:'Errore: '}
+.clientVersion {
+	font-weight:bold;
+	font-size:200%;
+	color:white;
+}
+
+/* Special */
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 black;
+    color: white;
+    text-shadow: -1px 1px #6AD2F0;
+}

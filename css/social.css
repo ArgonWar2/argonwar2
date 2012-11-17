@@ -1,0 +1,28 @@
+#social {width:100%}
+#social a {
+	display:block;
+	opacity:.6;
+	float:left;
+	/* box-shadow: 2px 2px 3px #000; */
+	margin:0 3px;
+}
+#facebook {background-image:url('../img/social/facebook.gif')}
+#twitter {background-image:url('../img/social/twitter.gif')}
+#youtube {background-image:url('../img/social/youtube.png')}
+#rss {background-image:url('../img/social/rss.png')}
+#facebook,#twitter {
+	width:29px;
+	height:29px;
+}
+#youtube,#rss {
+	width:32px;
+	height:32px;
+}
+#social a:hover {
+	opacity:1;
+}
+#social:after {
+	display:block;
+	content:'';
+	clear:both;
+}

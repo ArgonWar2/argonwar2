@@ -1,0 +1,10 @@
+#terms {
+	text-align:justify;
+	margin:0 50px;
+	list-style: decimal outside none;
+}
+#terms li {
+	padding:3px 15px;
+	margin:3px 0;
+	line-height:150%;
+}

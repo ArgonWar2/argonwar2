@@ -1,0 +1,130 @@
+.article-comment {
+	position:relative;
+	margin:10px auto;
+	width:90%;
+	border-radius:3px;
+	padding:5px;
+}
+.article-comment div {
+	background-image:url('../img/commentator.jpg');
+	background-repeat:no-repeat;
+	width:30px;
+	height:40px;
+	opacity:.6;
+	border-radius:3px;
+	float:left;
+	margin-right:5px;
+}
+
+.article-comment:hover div {
+	opacity:1;
+}
+/*
+.article-comment div:hover {
+	opacity:1;
+}
+*/
+.article-comment a,
+.article-comment time {
+	/*display:block;*/
+}
+
+.article-comment a {
+	font-weight:bold;
+}
+.article-comment time {
+	color:gray;
+	font-size:10px;
+	display:block;
+	width:80%;
+}
+.article-comment time span { /* karma */
+	color:white;
+	font-size:13px;
+	margin-left:4px;
+}
+
+.thumb_mini {
+    cursor: help;
+    display: inline-block;
+    height: 13px;
+    margin: 0 0 -2px 4px;
+    padding: 0;
+    vertical-align: baseline;
+    width: 12px;
+}
+
+.thumb_mini.up {
+    background: url("../img/thumbs.png") no-repeat scroll 0 -60px transparent;
+}
+.thumb_mini.down {
+    background: url("../img/thumbs.png") no-repeat scroll -12px -60px transparent;	
+}
+
+.article-comment time:hover {color:white}
+.article-comment p {
+	margin:0;
+	line-height:100%;
+	margin-left:35px;
+	font-size:11px;
+	margin-top:5px;
+	color:#ddd;
+}
+.article-comment p:hover {
+	color:white;
+}
+
+.article-comment:after {display:block;content:'';clear:both;}
+
+.article-comment button {
+	visibility:hidden;
+	opacity:.4;
+	position:absolute;
+	top:5px;
+	width:20px;
+	height:21px;
+	background-image:url('../img/thumbs.png');
+	border:0;
+	margin:0;
+	padding:0;
+	background-repeat:no-repeat;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.article-comment:hover {
+	background:rgba(255,255,255,.1);
+}
+
+.article-comment:hover button {
+	visibility:visible;
+}
+
+.article-comment button:hover {
+	opacity:1;
+}
+
+.article-comment button.comment-like {
+	right:30px;
+}
+.article-comment button.comment-dislike {
+	background-position: -20px 0;/* horizontal vertical */
+	right:5px;	
+}
+
+.comment-like-inactive {
+	background-position: 0 -40px !important;/* horizontal vertical */
+}
+.comment-dislike-inactive {
+	background-position: -20px -40px !important;/* horizontal vertical */	
+}
+
+.article-comment button.comment-like:active {
+	background-position: 0 -20px;/* horizontal vertical */
+}
+
+.article-comment button.comment-dislike:active {
+	background-position: -20px -20px;/* horizontal vertical */
+}

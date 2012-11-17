@@ -1,0 +1,22 @@
+.staff-member {
+}
+.staff-member div{ /* avatar */
+	width:150px;
+	height:150px;
+	border: 10px solid rgba(192,192,192,.2);
+	border-radius:6px;
+	background-repeat:no-repeat;
+	background-position:center;
+	box-shadow:0 0 10px black;
+}
+.staff-member h3{ /* nickname */
+	display:block;
+	font-weight:bold;
+}
+/*.staff-member h4{  permission 
+}
+*/
+
+.staff-member p{ /* shout */
+	font-style:italic;
+}

@@ -1,0 +1,140 @@
+#player_profile { /* main div */
+	margin: 20px 30px 50px 30px;
+}
+#player_profile:after {display:block;content:'';clear:both;}
+
+#player_profile div:nth-child(1) { /* left div */
+	width:170px;
+	float:left;
+}
+#player_profile div:nth-child(1) div:nth-child(1) { /* avatar */
+	width:150px;
+	height:150px;
+	border: 10px solid rgba(192,192,192,.2);
+	border-radius:6px;
+	background-repeat:no-repeat;
+	background-position:center;
+	box-shadow:0 0 10px black;
+}
+#player_profile div:nth-child(1) div:nth-child(2) { /* nickname and description container */
+	width:170px;
+	word-wrap: break-word;
+	text-align:center;
+}
+
+#player_profile div:nth-child(1) div:nth-child(2) span:nth-child(1) { /* nickname */
+	display:block;
+	margin: 5px 0;
+	font-weight:bold;
+}
+#player_profile div:nth-child(1) div:nth-child(2) span:nth-child(2) { /* description */
+	font-style:italic;
+}
+
+#player_profile div:nth-child(2) { /* right div */
+	width:296px;
+	float:left;
+}
+#player_profile div:nth-child(2) ul { /* unordered attributes' list */
+	list-style:none;
+	display:table;
+	/* border-left: 1px solid white; */
+	width:100%;	
+}
+#player_profile div:nth-child(2) ul li { /* unordered attributes' list rows */
+	display:table-row;
+	width:100%;
+}
+
+#player_profile div:nth-child(2) ul li:hover { /* unordered attributes' list rows */
+	background-color:black;
+}
+
+#player_profile div:nth-child(2) ul li span { /* unordered attributes' list cells */
+	display:table-cell;
+	padding: 5px 0;
+	border-bottom: 1px dashed #666;
+}
+#player_profile div:nth-child(2) ul li:last-child span { /* unordered attributes' list - last cells */
+	border:none;
+}
+
+#player_profile div:nth-child(2) ul li > span:nth-child(1) { /* unordered attributes' list elements - first span */
+	font-weight:bold;
+	padding-left:30px;
+	width:50%;
+}
+#player_profile div:nth-child(2) ul li span:nth-child(1):hover,
+#player_profile div:nth-child(1) div:nth-child(2) span:hover
+{ /* unordered attributes' list elements - first span:hover, and nickname/description:hover */
+	text-shadow:0px 0px 1px white;
+}
+
+
+
+#player_profile div:nth-child(2) ul li span:nth-child(2) { /* unordered attributes' list elements - second span */
+	width:50%;
+}
+
+#player_profile div:nth-child(2) ul li:after { display:block; content:''; clear:right; }
+
+#ht_percentImage {background-image: url('../../progressbar/images/bramus/percentImage_back4.png') !important}
+#iq_percentImage {background-image: url('../../progressbar/images/bramus/percentImage_back1.png') !important}
+#st_percentImage {background-image: url('../../progressbar/images/bramus/percentImage_back3.png') !important}
+#dx_percentImage {background-image: url('../../progressbar/images/bramus/percentImage_back2.png') !important}
+
+/* Progress or Meter */
+/*
+div#player_profile div:nth-child(2) ul li:nth-child(2) progress {background-color:#F55}
+div#player_profile div:nth-child(2) ul li:nth-child(3) progress {background-color:purple}
+div#player_profile div:nth-child(2) ul li:nth-child(4) progress {background-color:yellow}
+div#player_profile div:nth-child(2) ul li:nth-child(5) progress {background-color:orange}
+*/
+/*meter { background-color: #415; border:none; box-shadow: 0 0 1px #ccc; }*/
+/*
+progress::-webkit-progress-bar-value,
+progress::-moz-progress-bar { background-color: white; }
+*/
+
+/* meter */
+meter { width:90%; }
+
+/* -webkit- */
+meter::-webkit-meter-horizontal-bar { /* background gradient */
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), color-stop(0.2, #555), color-stop(0.45, #222), color-stop(0.55, #222), to(#DDD));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), color-stop(0.2, #555), color-stop(0.45, #222), color-stop(0.55, #222), to(#000));
+}
+
+meter::-webkit-meter-horizontal-optimum-value { /* value gradient */
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#800), color-stop(0.2, #A66), color-stop(0.45, #500), color-stop(0.55, #500), to(#800));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#800), color-stop(0.2, #A66), color-stop(0.45, #500), color-stop(0.55, #500), to(#800));
+}
+
+meter::-webkit-meter-vertical-optimum-value { /* value gradient */
+background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#800), to(#800), color-stop(0.2, #A66), color-stop(0.45, #500), color-stop(0.55, #500));
+background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#800), to(#800), color-stop(0.2, #A66), color-stop(0.45, #500), color-stop(0.55, #500));
+}
+
+/* -moz- */
+
+meter {
+	display:block;
+	display: inline-block;
+	height: 1em;
+	background: background: rgb(243,197,189); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,197,189,1)), color-stop(50%,rgba(232,108,87,1)), color-stop(51%,rgba(234,40,3,1)), color-stop(75%,rgba(255,102,0,1)), color-stop(100%,rgba(199,34,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+}
+
+-moz-meter-bar {
+	background:blue !important;
+}
+
+-moz-meter {
+	background:blue !important;
+}

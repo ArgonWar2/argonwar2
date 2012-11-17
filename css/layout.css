@@ -1,0 +1,84 @@
+/* Main ID Selectors */
+#header{
+	background-image: url('../img/header.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	height:185px;
+}
+#navbar{
+	height: 50px;
+	line-height:50px;
+	background-color: #D0C47D; /* for usability in IE7 and older */	
+	background-image: url('../img/navbar-sx.png'), url('../img/navbar-dx.png'), url('../img/navbar-center.png');
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: left, right, center;
+}
+#footer{
+	background-color: #333;
+	height: 50px;
+	line-height:50px;
+	/* clear:both; */
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Columns */
+#columns{}
+#c1,#c2,#c3{float:left}
+#c1,#c3{width:20%}
+#c1{}
+#c2{width:60%}
+#c3 {}
+#columns:after{display:block;content: '';clear:both}
+
+/* Contents */
+#left, #right, #center{
+	margin: 0 auto;
+	padding:15px 10px 20px 10px;
+	word-wrap: break-word;
+	background-color: #333;	/* quirks mode */
+}
+#left, #right{width: 152px; /* -20*2 padding */}
+#left{}
+#right{}
+#center{
+	background-color: #333;
+	width: 526px; /* -20 padding */
+	font-size:14px;
+}
+
+/* Initial rules */
+
+#header, #navbar, #columns, #footer
+{
+	position:relative;
+	min-width:960px;
+}
+
+#header, #navbar, #columns
+{
+	margin-bottom: 20px;
+}
+
+#left, #center, #right,
+#footer, .trailer {
+	border-top: 1px solid #888;
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+	border-bottom: 2px solid #CCC;
+	box-shadow: 3px 3px 6px #000,
+				-3px -3px 6px #000;
+	/* linear gradient - from www.impressivewebs.com/css3-linear-gradient-syntax */
+	background: -moz-linear-gradient(rgba(34,34,34,0.8), rgba(60,60,60,0.8)); /* FF 3.6+ */  
+    background: -ms-linear-gradient(rgba(34,34,34,0.8), rgba(60,60,60,0.8)); /* IE10 */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(34,34,34,0.8)), color-stop(100%, rgba(60,60,60,0.8))); /* Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient(rgba(34,34,34,0.8), rgba(60,60,60,0.8)); /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient(rgba(34,34,34,0.8), rgba(60,60,60,0.8)); /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#444444'); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#444444')"; /* IE8+ */  
+    background: linear-gradient(rgba(34,34,34,0.8), rgba(60,60,60,0.8)); /* the standard */
+}
+
+#left {border-radius:0 10px 0 10px}
+#center, #footer {border-radius:14px}
+#right {border-radius:10px 0 10px 0}

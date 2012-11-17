@@ -1,0 +1,102 @@
+#classifica {
+	display:table;
+	width:100%;
+	table-layout:fixed; /* fixes overlapped words and renders faster */
+}
+#classifica li {
+	display:table-row;
+}
+#classifica li span {
+	display:table-cell;
+	vertical-align:middle;
+}
+#classifica li span:nth-child(1) { /* Pos. */
+	text-align:center;
+	font-weight:bold;
+}
+#classifica li span:nth-child(2) { /* Nome */
+	width:28%;
+}
+	#classifica li span:nth-child(2) a {
+		text-decoration:none;
+	}
+#classifica li span:nth-child(3) { /* Razza */
+	text-align:center;
+	font-weight:bold;
+}
+#classifica li span:nth-child(4) { /* Liv. */
+	width:8%;
+}
+#classifica li span:nth-child(5) { /* Regno */
+	
+}
+#classifica li span:nth-child(6) { /* Exp */
+	width:25%;
+}
+
+#classifica li:nth-child(1) { /* head of rank */
+	font-size:20px;
+	font-weight:bold;
+	/* background-color:#333 !important; */
+	/* border-radius: 2em 2em 0 0; not working because of display:table-row */	
+}
+#classifica li:nth-child(even) {
+	background-color: rgba(136,136,136,.2);
+}
+#classifica li:hover {
+	background-color: #000;
+}
+
+nav#rank {
+	display:block;
+	/*
+	border-radius: 0 0 2em 2em;	
+	background-color:#333;
+	*/
+	text-align:center;
+	margin:20px 0;
+
+}
+
+nav#rank a {
+	/* display:block; */
+	border:1px solid #F2E69F; /* beige */
+	/*float:left;*/
+	padding:5px 8px;
+	font-weight:bold;
+	background-color: #666;
+}
+
+nav#rank a:hover {
+	background-color: #444;
+}
+
+/*
+nav#rank a:first-child,
+nav#rank a:last-child  {
+	border:none;
+}
+*/
+
+nav#rank:after {
+	clear:left;
+}
+
+form#rank_search {/*margin:0 auto 30px auto;*/}
+form#rank_search * {float:left}
+form#rank_search ul {}
+form#rank_search ul li {margin:2px;}
+form#rank_search ul li label {padding-right:10px;padding-top:5px;}
+form#rank_search ul li select {}
+form#rank_search ul li input {}
+form#rank_search button {float:right;margin-bottom:5px;}
+form#rank_search:after {display:block;clear:both;content:''}
+
+#exp_percentImage {background-image: url('../../progressbar/images/bramus/percentImage_back.png') !important}
+
+/*
+progress {
+	display:block;
+	width:90%;
+}
+*/

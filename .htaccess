@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+	RewriteEngine on
+	# RewriteBase /
+
+	# 301 Redirect to subdomain
+	RewriteCond %{HTTP_HOST}%{REQUEST_URI}  ^(www\.)?globalgamesitalia.net/metin2/
+	RewriteRule  (.*)  http://metin2.globalgamesitalia.net/$1  [R=301,L]
+
+	RewriteRule ^rss/?$ rss.php	
+	
+	RewriteRule ^([^/\.]+)/?$ index.php?p=$1
+	
+	# added 26 nov 20:30
+	RewriteRule ^registrazione_step2/([^/\.]+)/?$ 			index.php?p=registrazione_step2&realm=$1
+	RewriteRule ^registrazione_step3/([^/\.]+)/([^/\.]+)/?$ index.php?p=registrazione_step3&realm=$1&race=$2
+
+	RewriteRule ^conferma_registrazione/([^/\.]+)/?$ index.php?p=conferma_registrazione&key=$1
+	
+	RewriteRule ^classifica/([^/\.]+)/?$ index.php?p=classifica&ranktype=$1
+	RewriteRule ^classifica/([^/\.]+)/(\d+)/?$ index.php?p=classifica&ranktype=$1&page=$2
+	
+	RewriteRule ^profilo/([^/\.]+)/([^/\.]+)/?$ index.php?p=profilo&profiletype=$1&profilename=$2
+	# 	 		 profilo/giocatore/nomeplayer
+	# 	 		 profilo/gilda/nomeguild
+	
+	RewriteRule ^news/([^/\.]+)/?$ index.php?p=news&article=$1
+	
+	ErrorDocument 403 /static/errordocs/403-forbidden.html
+	ErrorDocument 404 /static/errordocs/404-not-found.html
+	ErrorDocument 500 /static/errordocs/500-internal-server-error.html
+</IfModule>

@@ -1,0 +1,15 @@
+button[name=login]{
+	width:100px;
+	padding:3px 0;
+	box-shadow: 0 -10px 6px #444 inset;
+	display:block;
+	margin:6px auto;	
+}
+
+input[name=user],
+input[name=pass]{
+	width:152px;
+	color:white;
+	margin:3px auto 6px auto;
+}
+
