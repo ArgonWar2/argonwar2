@@ -39,6 +39,14 @@ Mt2CMS è un software open source rilasciato su licenza MIT.
 
 *****
 
+## Screenshots
+![home](https://raw.github.com/simonewebdesign/Mt2-CMS/master/img/screenshots/home.png)
+![commenti](https://raw.github.com/simonewebdesign/Mt2-CMS/master/img/screenshots/commenti.png)
+![profilo](https://raw.github.com/simonewebdesign/Mt2-CMS/master/img/screenshots/profilo.png)
+![backend](https://raw.github.com/simonewebdesign/Mt2-CMS/master/img/screenshots/backend.png)
+
+*****
+
 #### English version
 
 **Mt2CMS** is a CMS, an acronym that stands for **C**ontent **M**anagement **S**ystem.
