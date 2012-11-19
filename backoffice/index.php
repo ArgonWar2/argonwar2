@@ -1,6 +1,6 @@
 <?php
-include_once '../global_definitions.php';
-include_once 'backend.config.php';
+include_once '../config.php'; // configuration file
+include_once 'boot.php'; // backoffice's bootstrap
 ?>
 <!DOCTYPE html>
 <html lang="it">

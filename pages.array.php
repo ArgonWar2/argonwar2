@@ -40,13 +40,13 @@ $pages = array(
 		),		
 	array(
 		"friendlyurl" => "classifica",
-		"title"		  => "La Classifica di GlobalLongju", //Hall of Fame
-		"subtitle"	  => "Solo i migliori ci entrano.",
+		"title"		  => "Hall of Fame",
+		"subtitle"	  => "Nomi che hanno fatto la storia.",
 		"filename"	  => "rank/rankings.php"
 	),
 	array(
 		"friendlyurl" => "aiuto",
-		"title"		  => "Serve aiuto?", // Need Help?
+		"title"		  => "Need help?",
 		"subtitle"	  => "",
 		"filename"	  => "help.php"
 	),

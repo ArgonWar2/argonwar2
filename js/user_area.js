@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
 	$('.change').each(function() {
 		$(this).click(function(){
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		});
 	});
 
-}); //document.ready()
+});
 
 /*
 $(this).parent().next().show('slow', function() {

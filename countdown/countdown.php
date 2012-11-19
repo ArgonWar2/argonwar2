@@ -19,7 +19,7 @@ if ( $date['secs'][2]	<= 0 &&
 <div id="container">
 
 	<h1 class="countdown_title">GRANDE<br>APERTURA</h1>
-	<h2 class="subtitle">- 10 Febbraio 2011 -</h2>
+	<h2 class="subtitle">- 21 Dicembre 2012 -</h2>
 	
 	<!-- Countdown dashboard start -->
 	<div id="countdown_dashboard">
@@ -61,20 +61,6 @@ if ( $date['secs'][2]	<= 0 &&
 		<h3>GlobalLongju è tornato.</h3><a href="registrazione"> Iscriviti subito</a> e partecipa anche tu<br>al grande evento di apertura.
 	</div>
 
-	<script language="javascript" type="text/javascript">
-		jQuery(document).ready(function() {
-			$('#countdown_dashboard').countDown({
-				targetDate: {
-					'day': 		<?=$time->day?>,
-					'month': 	<?=$time->month?>,
-					'year': 	<?=$time->year?>,
-					'hour': 	<?=$time->hour?>,
-					'min': 		<?=$time->minute?>,
-					'sec': 		<?=$time->second?>
-				}
-			});
-		});
-	</script>
 </div>
 
 <?php } ?>

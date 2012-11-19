@@ -6,9 +6,6 @@ $_page = (int) isset($_GET['page']) ? $_GET['page'] : 1; //page is NOT p
 $query_start = ($_page * $rows_to_show) - $rows_to_show;
 ?>
 
-<h1>Hall of Fame</h1>
-<h3>Nomi che hanno fatto la storia.</h3>
-
 <a id="show_search" class="gray-link transition" rel="<?=ROOT?>rank/<?=$ranktype?>.search.php">Ricerca avanzata</a>
 <?php
 if ($ranktype == 'giocatori')

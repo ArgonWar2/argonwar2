@@ -1,5 +1,5 @@
 <?php
-include_once '../main.config.php';
+include_once '../config.php';
 include_once '../function/getRace.php';
 include_once '../function/getEmpire.php';
 ?>

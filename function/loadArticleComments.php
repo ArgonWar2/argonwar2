@@ -1,5 +1,5 @@
 <?php
-include_once '../main.config.php';
+include_once '../config.php';
 
 $article->id = isset($_POST['postid']) ? $_POST['postid'] : '';
 
