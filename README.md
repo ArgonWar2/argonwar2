@@ -84,6 +84,13 @@ The website is developed in HTML5 / CSS3 in the frontend, whilst comes with a po
 - View / Create / Edit / Delete articles (only if your account has the authorization to do so)
 - Dynamic managing of FAQ (Frequently Asked Questions)
 
+### Permission levels
+`0 SERVER_ADMIN        View and edit logs`
+`1 SUPER_GAME_MASTER   Create items`
+`2 GAME_MASTER         View account list (he can ban users too)`
+`3 CHIEF_REPORTER      View articles list, publish and edit`
+`4 REPORTER            Write new articles`
+
 Not all features have been implemented, but you're very welcome to contribute by implementing new features or improving the existing ones.
 
 Mt2CMS is free open source software released under MIT license.

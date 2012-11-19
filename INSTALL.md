@@ -5,3 +5,15 @@
 3. Create the backend database from the provided MySQL dump (you can find it in `/db` folder.)
 4. You may need to configure the application according to your server settings. Apache must have `rewrite_mod` and `short_open_tag` modules enabled.
 5. Open a new issue if you are in trouble.
+
+## Getting Started
+
+Once you get it working, try the login features. Data is available for demonstrational purposes.
+
+### Frontend
+- Username: **power**
+- Password: **asd**
+
+### Backend
+- Username: **admin** (user permission level: 0)
+- Password: **demo**
