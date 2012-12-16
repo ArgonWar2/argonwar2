@@ -1,6 +1,6 @@
 ![Mt2CMS](https://raw.github.com/simonewebdesign/Mt2-CMS/master/img/mt2cms-logo.png)
 
-**Mt2CMS** è un CMS (**C**ontent **M**anagement **S**ystem), ovvero un gestore di contenuti.
+**Mt2CMS** è un CMS (Content Management System), ovvero un gestore di contenuti.
 Il progetto è partito dal sito di uno shard già esistente dal 2011 (GlobalLongju Metin2); lo sviluppo è durato ben 4 mesi ed ha portato alla nascita di un'applicazione web robusta, funzionale ed innovativa.
 
 Il sito è sviluppato in HTML5 / CSS3 nella parte grafica (frontend), ed ha un potente motore PHP / MySQL nella parte di gestione (backend).
@@ -47,7 +47,7 @@ Mt2CMS è un software open source rilasciato su licenza MIT.
 
 *****
 
-#### English version
+# English version
 
 **Mt2CMS** is a CMS, an acronym that stands for **C**ontent **M**anagement **S**ystem.
 The project started since 2011 from an existing shard (GlobalLongju Metin2); the development has been going on for 4 months, and lead us to the born of a robust, functional and innovative web application.
